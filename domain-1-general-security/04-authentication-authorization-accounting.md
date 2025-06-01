@@ -58,7 +58,6 @@ The **AAA framework** defines a structured approach for managing user and system
 This image illustrates how a user is authenticated before gaining access to internal resources:
 
 ![AAA Authentication Flow](../assets/aaa-authentication-flow.png)
-![Authorization Model Example](../assets/authorization-model-example.png)
 
 
 ---
