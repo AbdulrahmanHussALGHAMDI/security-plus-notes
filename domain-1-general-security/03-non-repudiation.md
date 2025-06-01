@@ -4,54 +4,68 @@
 
 ---
 
-## 🎯 Overview
+## 🎯 What Is Non-repudiation?
 
-**Non-repudiation** ensures that someone **cannot deny** performing an action, such as sending a message or signing a document.  
-It's a core concept in cybersecurity that provides **proof of origin** and **proof of integrity**.
+**Non-repudiation** is a security concept that ensures a person **cannot deny** having performed an action, such as sending a message, signing a document, or performing a transaction.
 
-> 🧠 Think: "You said it — now you can’t deny it."
+> 🧠 Think of it as a **digital “you said it, you own it”**.
 
----
+In the real world, this is like signing a contract:
+- ✍️ Your signature proves **you signed** it.
+- 🧾 Others can verify that signature.
+- ❌ You cannot later deny your involvement.
 
-## 🧾 Real-world Example
-
-Signing a contract:
-- ✍️ Your signature proves **you agreed**.
-- 🧾 Everyone can **verify** it's your signature.
-- 🛡️ You **can’t deny** signing it — that's non-repudiation.
-
----
-
-## 🔐 In Cryptography
-
-Non-repudiation adds:
-- ✅ Proof of **data integrity**
-- ✅ Proof of **message origin**
-- ✅ High assurance of **authenticity**
-
-This is achieved using:
-- **Hashing**
-- **Digital Signatures**
-- **Private/Public Key Pairs**
+In cybersecurity, non-repudiation provides:
+- **Proof of integrity** – The data hasn’t been altered.
+- **Proof of origin** – It came from who claims to have sent it.
 
 ---
 
-## 🧬 Proof of Integrity
+## 🧪 Proof of Integrity (via Hashing)
 
-- A **hash** is a fingerprint of data.
-- If any part of the data changes, the hash changes.
-- Hashing alone shows **if** data changed — but **not who** changed it.
+To verify that data has not changed, we use a **hashing algorithm**:
+- A **hash** is a short string that uniquely represents a file or message.
+- If even **one character** changes, the hash output will change drastically.
+- This makes hashes ideal for detecting **tampering or corruption**.
 
-> Example: If a file's hash differs, something has been altered.
+> Hash = a **digital fingerprint** of the data.
+
+### Example:
+- File: *Gutenberg Encyclopedia, Vol 1* (8.1 MB)
+- Change one character → the hash is completely different
+- Result: The integrity has been compromised
+
+Note: Hashes alone **do not associate data with a person** — they only verify whether the data changed.
 
 ---
 
-## ✍️ Creating a Digital Signature
+## 🔐 Proof of Origin (via Digital Signatures)
 
-1. **Hash** the original message.
-2. **Encrypt** that hash using the **sender’s private key**.
-3. Result = **Digital Signature**
-4. Send the **plaintext** + **digital signature** together.
+Hashing is combined with **digital signatures** to also verify **who** sent the message:
 
-```plaintext
-Only the sender (who owns the private key) could have signed it.
+### ✅ How It Works:
+1. The sender **hashes** the message.
+2. The hash is **encrypted with the sender’s private key** — this becomes the **digital signature**.
+3. The recipient can **decrypt** the signature using the sender’s **public key**.
+4. The recipient also hashes the original message and compares both hashes.
+
+If the hashes match:
+- ✅ The message is **unchanged**.
+- ✅ The message was signed by the **legitimate sender**.
+- ✅ The sender **cannot deny** signing it.
+
+---
+
+## 🔏 Why It Matters
+
+Digital signatures provide **three critical assurances**:
+- 🧾 **Integrity** – Message was not altered.
+- 👤 **Authentication** – Confirms the identity of the sender.
+- 🚫 **Non-repudiation** – Sender cannot deny they sent it.
+
+> Only someone with the **private key** could have signed the message.  
+> Only someone with the **public key** can verify that it’s valid.
+
+---
+
+✅ Return to [Domain 1 Overview](./README.md)
