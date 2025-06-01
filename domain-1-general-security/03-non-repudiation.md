@@ -68,4 +68,17 @@ Digital signatures provide **three critical assurances**:
 
 ---
 
+---
+
+## 🖼️ Visual Summary
+
+### Creating a Digital Signature
+
+![Creating a Digital Signature](../assets/creating-digital-signature.png)
+
+### Verifying a Digital Signature
+
+![Verifying a Digital Signature](../assets/verifying-digital-signature.png)
+
+
 ✅ Return to [Domain 1 Overview](./README.md)
