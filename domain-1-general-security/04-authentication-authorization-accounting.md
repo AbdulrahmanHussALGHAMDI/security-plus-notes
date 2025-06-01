@@ -114,6 +114,14 @@ Works with **many users**, **devices**, and **systems**.
 
 ---
 
+### 🖼️ Diagram: Authorization Model in Action
+
+This diagram shows how an abstraction layer (e.g., a department or role) allows multiple users to access specific functions without direct user-to-resource mapping:
+
+![Authorization Model Example](../assets/authorization-model-example.png)
+
+---
+
 ### 📊 Types of Authorization Models
 
 | Model Type     | Description                                             |
