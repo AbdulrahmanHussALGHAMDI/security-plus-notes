@@ -38,7 +38,7 @@ Pull requests and suggestions are welcome!
 
 ## 📬 Community
 
-**If you find this helpful, star ⭐ the repo or tag me on [LinkedIn](https://www.linkedin.com/in/your-link)! I'd love to hear how you're using it.**
+**If you find this helpful, star ⭐ the repo or tag me on [LinkedIn](www.linkedin.com/in/abdulrahmanhussainalghamdi)! I'd love to hear how you're using it.**
 
 ---
 
