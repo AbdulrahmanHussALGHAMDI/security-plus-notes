@@ -14,10 +14,9 @@ These notes are based on [Professor Messer's](https://www.professormesser.com/) 
 |-------|------|
 | 1.1 – Security Controls | [View](./domain-1-general-security/01-security-controls.md) |
 | 1.2 – The CIA Triad | [View](./domain-1-general-security/02-cia-triad.md) |
-| 1.3 – Coming soon... | [View](./domain-1-general-security/02-cia-triad.md) |
-| 1.4 – Coming soon... | [View](./domain-1-general-security/02-cia-triad.md) |
-| 1.5 – Gap Analysis | [View](./domain-1-general-security/02-cia-triad.md) |
-
+| 1.3 – Non-repudiation | [View](./domain-1-general-security/03-non-repudiation.md) |
+| 1.4 – Authentication, Authorization, and Accounting | [View](./domain-1-general-security/04-authentication-authorization-accounting.md) |
+| 1.5 – Gap Analysis | [View](./domain-1-general-security/05-gap-analysis.md) |
 
 ✅ More domains will be added soon!
 
